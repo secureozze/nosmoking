@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <title>금연챌린지 환급</title>
+
+  <!-- Google font file. If you want you can change. -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900" rel="stylesheet">
+
+  <!-- Fontawesome font file css -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+  <!-- Animate css file for css3 animations. for more : https://daneden.github.io/animate.css -->
+  <!-- Only use animate action. If you dont use animation, you don't have to add.-->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/cryptocoins.css">
+  <link rel="stylesheet" type="text/css" href="plugins/c3-chart/c3.css">
+
+  <!-- Template global css file. Requared all pages -->
+  <link rel="stylesheet" type="text/css" href="css/global.style.css">
+
+  <!-- Swiper slider css file -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+
+  <!--turbo slider plugin css file -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="plugins/turbo-slider/turbo.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper ">
+
+    <div class="wrapper-inline">
+      <input type="hidden" id = "proindex" value="<%=proindex%>"></input>
+      <!-- Header area start -->
+      <header class="no-background">
+        <!-- extra class no-background -->
+
+        <a class="go-back-link" href="javascript:history.back();"><i class="fa fa-arrow-left"></i></a>
+        <div class="search-button" data-search="open">
+          <img src="img/content/notification1.png" class="not-icon1" alt="">
+          <img src="img/content/notification2.png" class="not-icon2" alt="">
+        </div>
+
+        <div class="navi-menu-button">
+          <em></em>
+          <em></em>
+          <em></em>
+        </div>
+
+      </header>
+      <!-- Header area end -->
+
+
+      <!-- Page content start -->
+      <main class="margin mt-0">
+
+        <div class="dash-balance">
+          <div class="dash-content relative">
+            <h3 class="w-text">환급받기</h3>
+            <div class="notification">
+              <a href=""><i class="fa fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <section class="container">
+          <div class="resources-card-wrapper">
+            <div class="ref-statistics mr-10" style="width: 90%;">
+              <img src="img/content/cert.png" class="img-xs" alt="">
+              <div class="d-flex flex-column ml-md-2">
+                <!-- <h4 class="mt-10 mb-5 ">인증방법</h4> -->
+                <p class="text-muted font-weight-medium">
+                  <h1>환급페이지</h1>
+                  <tr>
+                  </tr>환급페이지
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="resources-card-wrapper">
+            <div class="ref-statistics mr-10" style="width: 90%;">
+              <img src="img/content/notice.png" class="img-xs" alt="">
+              <!-- <div class="d-flex flex-column ml-md-2"> -->
+              <!-- <h4 class="mt-10 mb-5 ">주의사항</h4> -->
+              <p class="text-muted font-weight-medium">
+                <h1>환급 규정</h1>환급페이지
+                <br>2. 프로젝트 시작 1/2 경과 전, 50% 환불
+                <br>3. 프로젝트 시작 후 1/2 경과 후, 환불 불가
+              </p>
+              <!-- </div> -->
+            </div>
+
+          </div>
+          <div class="resources-card-wrapper">
+            <div class="ref-statistics mr-10" style="width: 90%;">
+              <img src="img/content/charge.png" class="img-xs" alt="">
+              <div class="d-flex flex-column ml-md-2">
+                <!-- <h4 class="mt-10 mb-5 ">참가비 충전</h4> -->
+                <p class="text-muted font-weight-medium">
+                  <h1>환급 받을 수 있는 금액</h1>
+                  <h3 id = "myPoint" ></h3>
+                
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container refer mt-15">
+
+
+          <div class="ref-content">
+            <button type="button" id="refundBtn" class="button circle block orange">환급받기</button>
+          </div>
+
+        </section>
+
+        <footer>
+          <div class="container">
+            <p>Copyright © All Right Reserved</p>
+          </div>
+        </footer>
+      </main>
+      <!-- Page content end -->
+    </div>
+  </div>
+
+  <!--Page loader DOM Elements. Requared all pages-->
+  <div class="sweet-loader">
+    <div class="box">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+    </div>
+  </div>
+
+  <!-- JQuery library file. requared all pages -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+
+  <!-- c3 Charts -->
+  <script src="plugins/c3-chart/c3.min.js"></script>
+  <script src="plugins/c3-chart/d3.min.js"></script>
+  <script src="plugins/c3-chart/c3.custom.js"></script>
+  <!-- Flot Charts -->
+  <script src="plugins/flot/jquery.flot.min.js"></script>
+  <script src="plugins/flot/jquery.flot.time.min.js"></script>
+  <script src="plugins/flot/jquery.flot.pie.min.js"></script>
+  <script src="plugins/flot/jquery.flot.tooltip.min.js"></script>
+  <script src="plugins/flot/jquery.flot.resize.min.js"></script>
+  <!-- Sparkline-->
+  <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+  <!-- Template global script file. requared all pages -->
+  <script src="js/app-charts.js"></script>
+  <script src="js/global.script.js"></script>
+
+
+  <script>
+                    
+                
+    ///////id 실제로 받아 오는 것으로 수정하기
+    var jwtToken = sessionStorage.getItem('jwtToken')
+    var pointTest = 0
+     $.ajax({
+       url:'http://localhost:3000/getpoint',
+       type : 'POST',
+       headers : {
+          'x-access-token' : jwtToken
+       },
+       data : {
+             id : 'aaaa'
+         },
+       success:function(data){
+          
+          $("#myPoint").text(data.point + "원");
+          pointTest=data.point;
+       }
+     })
+ 
+
+ 
+ 
+    
+
+    function getQueryStringObject() {
+      var a = window.location.search.substr(1).split('&');
+      if (a == "") return {};
+      var b = {};
+      for (var i = 0; i < a.length; ++i) {
+        var p = a[i].split('=', 2);
+        if (p.length == 1)
+          b[p[0]] = "";
+        else
+          b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+      }
+      return b;
+    }
+    var qs = getQueryStringObject();
+    var jwtToken = sessionStorage.getItem('jwtToken')
+
+    // jquery로 데이터 가져오려고 input마다 id를 주었음
+    $("#refundBtn").click(function () {
+      var proindex = $('#proindex').val();
+      if(pointTest!=0)
+      {
+      alert(pointTest+"원을 환급받았습니다.")
+      $.ajax({
+        url: 'http://localhost:3000/depositRefund',
+        type: 'POST',
+        headers: {
+          'x-access-token': jwtToken
+        },
+        data: {
+          fin_use_num: qs.fin_use_num,
+          proindex : proindex
+        },
+        success: function (resultObject) {
+          console.log(resultObject)
+          if (resultObject.rsp_code == 'A0000') { //출금이체 완료시 충전완료 페이지로 이동
+            window.location.href="http://localhost:3000/main";
+          }
+        }
+      })
+      }
+      else{
+          alert("죄송합니다. 환급받을 포인트가 부족합니다.")
+          window.location.href="http://localhost:3000/main";
+      }
+    
+     
+    })
+  </script>
+
+
+
+
+
+</body>
+
+</html>
