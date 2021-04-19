@@ -1,8 +1,6 @@
-# No Smoking (Web)
+# 🚭 No Smoking (Web)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fe886de5-4e44-4d20-b976-b1f255e57c2f/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fe886de5-4e44-4d20-b976-b1f255e57c2f/Untitled.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e1df4ada-019a-46f7-a8cb-de4a8e66605b/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e1df4ada-019a-46f7-a8cb-de4a8e66605b/Untitled.png)
 
 ### 📄 Content
 
