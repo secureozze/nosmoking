@@ -1,6 +1,6 @@
 # 🚭 No Smoking (Web)
 
-![smoking01](https://i.esdrop.com/d/HUIWpoiX2c.png)
+<img src="https://i.esdrop.com/d/HUIWpoiX2c.png" align="center">
 ![smoking02](https://i.esdrop.com/d/tvon2knb1H.png)
 
 ### 📄 Content
