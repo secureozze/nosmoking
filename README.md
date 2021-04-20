@@ -28,8 +28,8 @@
 
 ---
 
-- HTML / CSS / Bootrstrap / jQuery
+- HTML / CSS / EJS
 - JavaScript / Node.js / Express.js / Ajax
 - Open Banking API
 - MySQL
-- Json Web Token
+- JWT(Json Web Token)
